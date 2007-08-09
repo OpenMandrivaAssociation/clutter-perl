@@ -29,6 +29,7 @@ BuildRequires: clutter-devel
 BuildRequires: clutter-cairo-devel
 BuildRequires: clutter-gst-devel
 BuildRequires: clutter-gtk-devel
+BuildRequires: perl-devel
 BuildRequires: perl-Gtk2
 BuildRequires: perl-GStreamer
 BuildRequires: perl-ExtUtils-Depends

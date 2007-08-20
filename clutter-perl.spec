@@ -1,7 +1,7 @@
 %define module Clutter
 
 %define name clutter-perl
-%define version 0.4.1
+%define version 0.4.1.0
 %define rel 1
 %define svn 0
 %if %svn
@@ -56,7 +56,7 @@ Perl bindings for clutter
 %setup -q -n %name
 ./autogen.sh -V
 %else
-%setup -q -n %{module}-0.401
+%setup -q -n %{module}-0.410
 %endif
 
 %build

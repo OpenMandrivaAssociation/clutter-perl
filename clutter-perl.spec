@@ -1,8 +1,8 @@
 %define module Clutter
-%define modulever 0.600
+%define modulever 0.801
 
 %define name clutter-perl
-%define version 0.6.0.0
+%define version 0.8.0.1
 %define rel 1
 %define svn 0
 %if %svn
@@ -11,6 +11,7 @@
 %define release %mkrel %rel
 %endif
 
+%define apiver 0.8
 %define api 1.0
 
 Summary:       Perl bindings for clutter
@@ -26,10 +27,10 @@ License:       LGPL
 Group:         Graphics
 Url:           http://clutter-project.org/
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: clutter-devel
-BuildRequires: clutter-cairo-devel
-BuildRequires: clutter-gst-devel
-BuildRequires: clutter-gtk-devel
+BuildRequires: clutter-devel >= %{apiver}
+BuildRequires: clutter-cairo-devel >= %{apiver}
+BuildRequires: clutter-gst-devel >= %{apiver}
+BuildRequires: clutter-gtk-devel >= %{apiver}
 BuildRequires: perl-devel
 BuildRequires: perl-Gtk2
 BuildRequires: perl-GStreamer
@@ -78,4 +79,6 @@ rm -rf %buildroot
 %{perl_vendorarch}/%module.pm
 %{perl_vendorarch}/auto/*
 %{perl_vendorarch}/Gtk2/%{module}Embed.pod
+%{perl_vendorarch}/Gtk2/%{module}Texture.pod
+%{perl_vendorarch}/Gtk2/%{module}Util.pod
 %{_mandir}/*/*

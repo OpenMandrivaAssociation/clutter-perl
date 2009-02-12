@@ -1,8 +1,8 @@
 %define module Clutter
-%define modulever 0.801
+%define modulever 0.820
 
 %define name clutter-perl
-%define version 0.8.0.1
+%define version 0.8.2.0
 %define rel 1
 %define svn 0
 %if %svn
@@ -21,18 +21,18 @@ Release:       %{release}
 %if %svn
 Source0:       %{name}-%{svn}.tar.bz2
 %else
-Source0:       %{name}-%{version}.tar.bz2
+Source0:       http://www.clutter-project.org/sources/clutter-perl/0.8/%{name}-%{version}.tar.bz2
 %endif
-License:       LGPL
+License:       LGPLv2+
 Group:         Graphics
 Url:           http://clutter-project.org/
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: clutter-devel >= %{apiver}
-BuildRequires: clutter-cairo-devel >= %{apiver}
-BuildRequires: clutter-gst-devel >= %{apiver}
-BuildRequires: clutter-gtk-devel >= %{apiver}
+BuildRequires: clutter-devel >= 0.8.2
+BuildRequires: clutter-cairo-devel >= 0.8.0
+BuildRequires: clutter-gst-devel >= 0.8.0
+BuildRequires: clutter-gtk-devel >= 0.8.0
 BuildRequires: perl-devel
-BuildRequires: perl-Gtk2
+BuildRequires: perl-Gtk2 >= 1.140
 BuildRequires: perl-GStreamer
 BuildRequires: perl-ExtUtils-Depends
 BuildRequires: perl-ExtUtils-PkgConfig

@@ -1,7 +1,7 @@
 %define module Clutter
 
 %define name clutter-perl
-%define version 1.0.0
+%define version 1.0.1
 %define rel 1
 %define svn 0
 %if %svn

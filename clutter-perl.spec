@@ -1,27 +1,13 @@
 %define module Clutter
 
-%define name clutter-perl
-%define version 1.0.1
-%define rel 3
-%define svn 0
-%if %svn
-%define release %mkrel 0.%svn.%rel
-%else
-%define release %mkrel %rel
-%endif
-
 %define apiver 1.0
 %define api 1.0
 
 Summary:       Perl bindings for clutter
-Name:          %{name}
-Version:       %{version}
-Release:       %{release}
-%if %svn
-Source0:       %{name}-%{svn}.tar.bz2
-%else
+Name:          clutter-perl
+Version:       1.0.1
+Release:       4
 Source0:       http://www.clutter-project.org/sources/clutter-perl/%api/%{name}-%{version}.tar.bz2
-%endif
 License:       LGPLv2+
 Group:         Graphics
 Url:           http://clutter-project.org/
@@ -49,12 +35,7 @@ Perl bindings for clutter
 #----------------------------------------------------------------------------
 
 %prep
-%if %svn
-%setup -q -n %name
-./autogen.sh -V
-%else
 %setup -q -n %name-%version
-%endif
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

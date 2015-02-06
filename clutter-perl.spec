@@ -6,7 +6,7 @@
 Summary:       Perl bindings for clutter
 Name:          clutter-perl
 Version:       1.0.1
-Release:       4
+Release:       5
 Source0:       http://www.clutter-project.org/sources/clutter-perl/%api/%{name}-%{version}.tar.bz2
 License:       LGPLv2+
 Group:         Graphics

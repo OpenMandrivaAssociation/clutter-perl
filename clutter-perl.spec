@@ -14,7 +14,7 @@ Url:           https://metacpan.org/pod/Clutter
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: clutter-devel >= 1.0
 BuildRequires: perl-devel
-BuildRequires: perl-Gtk2 >= 1.140
+#BuildRequires: perl-Gtk2 >= 1.140
 BuildRequires: perl-ExtUtils-Depends
 BuildRequires: perl-ExtUtils-PkgConfig
 

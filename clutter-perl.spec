@@ -52,7 +52,7 @@ rm -rf %buildroot
 
 %files -n perl-%{module}
 %defattr(-,root,root)
-%{perl_vendorarch}/%module
-%{perl_vendorarch}/%module.pm
-%{perl_vendorarch}/auto/*
+#{perl_vendorarch}/%module
+#{perl_vendorarch}/%module.pm
+#{perl_vendorarch}/auto/*
 %{_mandir}/*/*

@@ -1,4 +1,5 @@
 %define module Clutter
+%define oname Clutter
 
 %define apiver 1.0
 %define api 1.0
@@ -35,7 +36,7 @@ Perl bindings for clutter
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n %name-%version
+%setup -q -n %oname-%version
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

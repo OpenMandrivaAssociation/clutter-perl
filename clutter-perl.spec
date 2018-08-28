@@ -5,12 +5,12 @@
 
 Summary:       Perl bindings for clutter
 Name:          clutter-perl
-Version:       1.0.1
-Release:       5
-Source0:       http://www.clutter-project.org/sources/clutter-perl/%api/%{name}-%{version}.tar.bz2
+Version:       1.110
+Release:       1
+Source0:       https://cpan.metacpan.org/authors/id/E/EB/EBASSI/Clutter-%{version}.tar.gz
 License:       LGPLv2+
 Group:         Graphics
-Url:           http://clutter-project.org/
+Url:           https://metacpan.org/pod/Clutter
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: clutter-devel >= 1.0
 BuildRequires: perl-devel

@@ -54,6 +54,6 @@ rm -rf %buildroot
 %defattr(-,root,root)
 #{perl_vendorarch}/%module
 #{perl_vendorarch}/%module.pm
-%{perl_vendorarch}/Clutter.pm
+%{_datadir}/perl5/vendor_perl/Clutter.pm
 #{perl_vendorarch}/auto/*
 %{_mandir}/*/*

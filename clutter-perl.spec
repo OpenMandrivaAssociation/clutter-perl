@@ -13,6 +13,7 @@ License:       LGPLv2+
 Group:         Graphics
 Url:           https://metacpan.org/pod/Clutter
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	make
 BuildRequires: clutter-devel >= 1.0
 BuildRequires: perl-devel
 #BuildRequires: perl-Gtk2 >= 1.140
